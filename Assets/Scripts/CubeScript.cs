@@ -11,9 +11,6 @@ public class CubeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Destroy(this);
-        }
+        if (Input.GetButtonDown("Jump")) Destroy(this.gameObject);
     }
 }
